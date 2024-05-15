@@ -15,5 +15,12 @@ RCT_EXPORT_METHOD(multiply:(double)a
     resolve(result);
 }
 
+RCT_EXPORT_METHOD(check:(RCTPromiseResolveBlock)resolve
+                  reject:(RCTPromiseRejectBlock)reject)
+{
+    BOOL result = YES;
+    resolve(@(result));
+}
+
 
 @end
