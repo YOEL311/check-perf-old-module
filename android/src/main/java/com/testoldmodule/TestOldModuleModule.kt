@@ -19,6 +19,11 @@ class TestOldModuleModule(reactContext: ReactApplicationContext) :
     promise.resolve(a * b)
   }
 
+  @ReactMethod
+  fun check(promise: Promise) {
+    promise.resolve(true)
+  }
+
   companion object {
     const val NAME = "TestOldModule"
   }

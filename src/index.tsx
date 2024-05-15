@@ -20,3 +20,7 @@ const TestOldModule = NativeModules.TestOldModule
 export function multiply(a: number, b: number): Promise<number> {
   return TestOldModule.multiply(a, b);
 }
+
+export function check(): Promise<boolean> {
+  return TestOldModule.check();
+}
